@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: 0;
+    scroll-behavior: smooth;
+    font-family: 'poopins' , sans-serif;
+    font-family: 'Sedgwick Ave Display',sans-serif;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+section{
+    min-height: 10vh;
+    padding: 15rem 9% 9em;
+}
+body{
+    background: #252B48;
+}
+
+/* opening */
+
+  .opening {
+    display: flex;
+    align-items: center;
+    height: 100vh;  
+    z-index: 999999;
+    overflow: hidden;
+    position: fixed;
+    background-color: white;
+}
+
+.header-text {
+    z-index: 99;
+    width: 100vw;
+}
+
+.below-header {
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    height: max-content;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    font-weight: 800;
+    letter-spacing: 10px;
+}
+
+.the-header {
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    height: max-content;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    font-weight: 1000;
+    letter-spacing: 10px;
+}
+
+/* box */
+.rectangle-box {
+    width: 1450px; /* lebar kotak */
+    height: 40px; /* tinggi kotak */
+    background-color: #4477CE; /* warna latar belakang kotak */
+    color: #fff; /* warna teks */
+    text-align: center; /* align teks ke tengah */
+   
+
+}
+
+/* navbar */
+.header {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:1rem 7%;
+    background-color: #252B48;
+     margin-top: 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:100;
+}
+.logo img{
+   width: 60px;
+   display: flex;
+}
+.navbar a{
+    font-size:1.7rem;
+    color: #fff;
+    margin-left:4rem;
+    transition:.3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: #096fb3;
+}
+   .active {
+    display: block;
+  } 
+  .my-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #096fb3;
+    color: #fff;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 500px;
+    margin-top: 30px;
+   
+  }
+  #menu-icon{
+    color: #fff;
+    display: none;
+   font-size: 25px;
+  }
+
+  /* Efek hover */
+  .my-button:hover {
+    background-color: #252B48;
+    color: #fff;
+    box-shadow: #252B48;
+  }
+  
+  
+
+
+  /* home */
+  .menu{
+    margin-top: 50px;
+  }
+  .heading p{
+    text-align: center;
+    font-family: 'Sedgwick Ave Display', sans-serif;
+    color: white;
+    font-weight: 1000;
+    font-size: 10px;
+}
+.heading span{
+    color: var(--main-color);
+    font-weight: 600;
+}
+.heading h2{
+    font-size: var(--h2-font);
+}
+.menu-container{
+    display: grid;
+    grid-template-columns:repeat(auto-fit , minmax(220px, auto ));
+    grid:1.5rem;
+    align-items: center;
+
+}
+.box{
+    position: relative;
+    margin-top: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    transition: .4s;
+    border-color: #3498db;
+}
+.box img{
+    width: 200px;
+    border-radius: 10px;
+    justify-content: center;
+    justify-content: space-between;
+    display: grid;
+    gap: 100rem;
+   
+}
+.box:hover{
+    transform: scale(1.2) translateY(10px) ;
+}
+/* profile */
+
+.profile h1{
+    color: white;
+    border-bottom: solid 1px white;
+    font-size: 50px;
+    text-align: center;
+
+}
+.profile p{
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+/* academic */
+.academic h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+.pamflet{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: inline;
+}
+.home video{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem;
+    margin-top: 70px;
+}
+/* .text{
+    color: var(--text-color);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+    margin: 8rem;
+    line-height: -1rem
+}
+.text .text-explain{
+    margin-bottom: 100px;
+}
+.text-explain h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.text-explain p{
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.button{
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    padding: 10px;
+    border-radius: 8rem;
+    font-size: 1.6rem;
+    transition: .5s;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.button:hover{
+    background-color: transparent;
+    color: var(--text-color);
+    text-decoration: underline;
+}
+.learn-more{
+    margin-left: 1rem;
+    text-decoration: underline black;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 200;
+    transition: .52s ease-in-out;
+    padding: 10px;
+    transition: 1s;
+}
+.learn-more:hover{
+    border: solid 1px black;
+    border-radius: 8rem;
+    text-decoration: dashed black;
+} */
+
+/* contact */
+.maps-content {
+    text-align: center;
+}
+
+.maps-content h1 {
+    font-size: 30px;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.map {
+    border-radius: 1rem;
+    margin-top: 100px;
+
+}
+.contact{
+    margin-top: -550px;
+}
+.contact h1 {
+    font-size: 30px;
+    display: inline;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.contact h2 {
+    font-size: 20px;
+    color: white;
+}
+
+.kontakk {
+    font-size: 15px;
+    color: white;
+}
+/* footer */
+.footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:2rem 9%;
+    flex-wrap:wrap;
+    background:white;
+}
+.footer-text{
+    font-size:1.6rem;
+}
+.footer-iconTop a {
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    padding:.8rem;
+    background-color:white;
+}
+.footer-iconTop{
+    font-size: 30px;
+}
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+      
+    .navbar {
+      margin-right: 20px; /* Adjust margin for smaller screens */
+    }
+    #menu-icon{
+        display:block;
+    }
+    .navbar{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        padding:1rem 3%;
+        background:#252B48;
+        border-top:.1rem solid rgba(0, 0, 0, .2);
+        box-shadow:0 .5rem 1rem rgba(0, 0, 0, .2);
+        display:none;
+    }
+    .navbar.active{
+        display:block; 
+    }
+    .navbar a{
+        display:block;
+        font-size:2rem;
+        margin:3rem 0;
+    }
+   .map{
+   
+    width: 300px;
+   }
+    .logo img {
+      justify-content: center;
+    }
+    .contact{
+        margin-top: 50px;
+    }
+  
+    .my-button {
+      margin-left: -1rem;
+      justify-content: center;
+      display: grid;
+      gap: 100;
+      margin-left: 3rem;
+      margin-right: 2rem;
+    }
+    .img{
+        grid-template-columns: repeat(2);
+    }
+  
+    .main-nav {
+      flex-direction: column; /* Stack navigation links vertically */
+      align-items: center;
+      display: none;
+    }
+  
+    .main-nav.active {
+      display: flex;
+    }
+  
+    .nav-links {
+      margin: 10px 0; /* Add space between navigation links */
+    }
+  
+    .navbar-toggle {
+      display: block; /* Show the navbar toggle button */
+    }
+  
+    /* Adjust the width of the rectangle-box for smaller screens */
+    .rectangle-box {
+      width: 100%;
+    }
+  
+    /* Adjust the font size for smaller screens */
+    .heading h1 {
+      font-size: 24px;
+    }
+  
+    /* Adjust the width of the images in the box for smaller screens */
+    .box img {
+      width: 100%;
+    }
+  
+    .heading p {
+      margin-top: -100px;
+    }
+    .profile p{
+        font-size: 10px;
+    }
+  }
+  
+  /* Additional media queries for smaller screens if needed */
+
