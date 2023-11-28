@@ -52,6 +52,7 @@ body{
     font-size: 5rem;
     font-weight: 800;
     letter-spacing: 10px;
+   
 }
 
 .the-header {
@@ -68,22 +69,14 @@ body{
     font-size: 5rem;
     font-weight: 1000;
     letter-spacing: 10px;
+ 
 }
 
 /* box */
-.rectangle-box {
-    width: 1450px; /* lebar kotak */
-    height: 40px; /* tinggi kotak */
-    background-color: #4477CE; /* warna latar belakang kotak */
-    color: #fff; /* warna teks */
-    text-align: center; /* align teks ke tengah */
-   
-
-}
 
 /* navbar */
 .header {
-    position:fixed;
+    position: fixed;
     top:0;
     left:0;
     width:100%;
@@ -123,7 +116,7 @@ body{
     border: 2px solid #3498db;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-    margin-left: 500px;
+    margin-left: 560px;
     margin-top: 30px;
    
   }
@@ -138,6 +131,7 @@ body{
     background-color: #252B48;
     color: #fff;
     box-shadow: #252B48;
+
   }
   
   
